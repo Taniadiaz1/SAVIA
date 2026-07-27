@@ -1,0 +1,103 @@
+/* src/styles/History.css */
+
+.history-background {
+    /* El degradado base */
+    background: linear-gradient(180deg, #F8FAFC 0%, #E2E8F0 100%);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding-bottom: 100px; /* Espacio para el navbar flotante */
+}
+
+.history-header {
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(12px); /* Efecto vidrio */
+    padding: 16px 24px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.history-title {
+    font-family: 'Roboto', sans-serif;
+    color: #1E293B;
+    letter-spacing: -0.5px;
+}
+
+/* --- TARJETAS --- */
+.history-card {
+    border-radius: 16px !important;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    border: 1px solid rgba(255,255,255,0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+.history-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.08) !important;
+}
+
+.mood-icon-box {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* --- CAJA DE NOTA --- */
+.note-box {
+    background-color: #F8FAFC;
+    padding: 16px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #F1F5F9;
+    position: relative;
+}
+
+.note-box::before {
+    content: '"';
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-size: 40px;
+    color: #CBD5E1;
+    font-family: serif;
+    line-height: 1;
+}
+
+.note-text {
+    color: #475569;
+    font-style: italic;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* --- BOTÓN DE BORRAR --- */
+.delete-btn {
+    opacity: 0.5;
+    transition: opacity 0.2s ease !important;
+}
+
+.history-card:hover .delete-btn {
+    opacity: 1;
+}
+
+.delete-btn:hover {
+    background-color: #FEF2F2 !important;
+    color: #EF5350 !important;
+}
+
+/* --- ESTADO VACÍO --- */
+.empty-state {
+    text-align: center;
+    padding: 40px;
+    opacity: 0.7;
+}

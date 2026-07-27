@@ -1,0 +1,56 @@
+/* Animación de pulso para el botón SOS */
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(255, 82, 82, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 82, 82, 0); }
+}
+
+.sos-main-button {
+  border-radius: 50px !important;
+  font-weight: bold !important;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+  box-shadow: 0 4px 14px 0 rgba(255, 138, 128, 0.4);
+  animation: pulse 1.5s infinite;
+  text-transform: none !important;
+}
+
+.sos-dialog-paper {
+  border-radius: 16px !important;
+  border-top: 8px solid #D32F2F !important;
+}
+
+.sos-dialog-title {
+  text-align: center;
+  padding-top: 24px !important;
+}
+
+.sos-icon-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.sos-options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Botones dentro del modal */
+.sos-list-button {
+  border-radius: 12px !important;
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+  text-decoration: none !important; /* Importante para los enlaces 'a' */
+  color: inherit !important;
+}
+
+.sos-btn-911 { background-color: #FFEBEE !important; border: 1px solid #FFCDD2; }
+.sos-btn-life { background-color: #E3F2FD !important; border: 1px solid #BBDEFB; }
+.sos-btn-whatsapp { background-color: #E8F5E9 !important; border: 1px solid #C8E6C9; }
+
+.sos-text-primary { font-weight: bold !important; font-size: 1.1rem !important; }
+.text-red { color: #C62828; }
+.text-blue { color: #1565C0; }
+.text-green { color: #2E7D32; }

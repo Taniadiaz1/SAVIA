@@ -1,0 +1,40 @@
+/* Contenedor que cubre toda la sección pero no bloquea clicks */
+.leaves-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none; /* IMPORTANTE: Esto permite dar click a los botones de abajo */
+    z-index: 0; /* Detrás del texto */
+}
+
+/* La hoja individual */
+.falling-leaf {
+    position: absolute;
+    top: -50px; /* Empiezan arriba fuera de la pantalla */
+    animation-name: fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* La animación de caída y balanceo */
+@keyframes fall {
+    0% {
+        top: -10%;
+        transform: translateX(0) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.8; /* Aparecen suavemente */
+    }
+    50% {
+        transform: translateX(100px) rotate(180deg); /* Se mueven a la derecha */
+    }
+    100% {
+        top: 110%; /* Terminan abajo fuera de la pantalla */
+        transform: translateX(-50px) rotate(360deg); /* Se mueven a la izquierda */
+        opacity: 0;
+    }
+}
