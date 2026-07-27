@@ -67,5 +67,5 @@ npm run dev
 
 ## 🔒 Licencia y Propiedad Intelectual
 
-© 2026 Tania Joseline Recendis Díaz. Todos los derechos reservados.  
+© 2026 Tania Joseline Resendiz Díaz. Todos los derechos reservados.  
 Este software es desarrollado y distribuido con fines académicos y profesionales. Queda prohibida la copia, reproducción o uso comercial de esta plataforma sin previa autorización.
